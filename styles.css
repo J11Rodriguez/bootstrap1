@@ -14,7 +14,7 @@ header {
     padding: 10px 0;
 }
 
-
+/* navbar */
 .navbar {
     background-color: #4caf50;
 }
@@ -27,7 +27,7 @@ header {
     color: #4caf50 !important; /* Cambiamos el color al hacer hover */
 }
 
-/* Toggle button */
+/* Carousel */
 .navbar-toggler-icon {
     background-color: #333;
 }
@@ -38,52 +38,79 @@ header {
 }
 
 .custom-carousel {
-  max-width: 800px; /* Ajusta este valor según tus necesidades */
-  margin: auto; /* Centra el carrusel */
+  max-width: 800px; 
+  margin: auto;
+}
+
+.custom-carousel {
+  background-color: #fff8e1; 
 }
 
 
+.carousel-inner {
+  width: 80%;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #f8e1a3; 
+}
+
+
+
+/*  cards */
+
+
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
 
-  .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
 
-  .card:hover {
-    transform: scale(1.05);
-  }
+.card:hover {
+  background-color: #4caf50; /* Cambia el color de fondo al hacer hover */
+}
 
-  .card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-  }
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
 
-  .card-content {
-    padding: 20px;
-  }
+.card-content {
+  padding: 15px;
+}
 
-  .card p {
-    margin-bottom: 10px;
-  }
+.card p {
+  margin-bottom: 10px;
+}
 
-  .card button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+.card button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 
   @media screen and (max-width: 600px) {
     .card-container {
