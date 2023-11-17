@@ -37,6 +37,11 @@ header {
     color: #fff;
 }
 
+.custom-carousel {
+  max-width: 800px; /* Ajusta este valor según tus necesidades */
+  margin: auto; /* Centra el carrusel */
+}
+
 
 .card-container {
     display: grid;
